@@ -80,6 +80,7 @@ const loadMasVendido = () => {
 const loadLastVisited = () => {
     var lastVisitedList = JSON.parse(localStorage.getItem('lastVisitedList') || "[]");
     var lastPoke = lastVisitedList[0].name;
+    console.log(lastPoke)
     $.ajax({
         url: `https://pokeapi.co/api/v2/pokemon/${lastPoke}`,
         type: "GET",
