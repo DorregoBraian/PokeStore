@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="../JS/Pokemon.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../CSS/Pokemon.css">
+    <link rel="stylesheet" href="../CSS/Main.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+
+    </header>
+
+    <section id="sub-header">
+      <div class="sub-header-location">
+        <span class="material-symbols-outlined header-icon">location_on</span>
+        <h2>Enviar a Ash Ketchum - Pueblo Paleta 123</h2>
+      </div>
+      <span class="material-symbols-outlined header-icon">arrow_forward_ios</span>
+    </section>
+
+
+    <main id="main">
+        <div id="mainDiv">
+            <section id="mainSection">
+                <div class="mainHeader">
+                    <h2 id="main-nombre">#</h2>
+                </div>
+    
+                <div class="mainImage">
+                    <img id="pokeImagen" src="" alt="">
+                </div>
+    
+                <div class="mainInfo">
+                    <h2 id="precio">$118.000</h2>
+                    <h2 id="cuotas">en 12x de $9834 pagando con Poke Pago</h2>
+                    <h3>Ver medios de pago</h3>
+                </div>
+            </section>
+
+            <div id="rightDiv">
+                <section id="negocio">
+                    <div class="stock">
+                        <h2>¡Stock Disponible!</h2>
+                    </div>
+        
+                    <div class="botones-compra">
+                        <button id="boton-comprar">Comprar Ahora</button>
+                        <button id="boton-carrito">Añadir al Carrito</button>
+                    </div>
+        
+                    <div class="info-carrito">
+                        <span class="material-symbols-outlined">add_shopping_cart</span>
+                        <p>Arma un carrito de productos del mismo vendedor y ahorra en el envio.</p>
+                    </div>
+                </section>
+        
+                <section id="fav-share">
+                    <div>
+                        <img id="corazon" src="../Images/corazon-off.png" alt="corazon">
+                        <a id="favorito" rel="noopener noreferrer">Agregar a Favoritos</a>
+                    </div>
+                    <div>
+                        <img src="../Images/compartir.png" alt="compartir">
+                        <a href="Formulario.html" rel="noopener noreferrer">Compartir</a>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+
+        <hr>
+        <div id="secondDiv">
+            <section id="estadisticas">
+                <h2>Estadisticas</h2>
+                <table>
+                    <tr>
+                        <td class="tdDark">HP</td>
+                        <td class="tdMedium" id="hp"></td>
+                    </tr>
+                    <tr>
+                        <td class="tdMedium">Ataque</td>
+                        <td class="tdLight" id="ataque"></td>
+                    </tr>
+                    <tr>
+                        <td class="tdDark">Defensa</td>
+                        <td class="tdMedium" id="defensa"></td>
+                    </tr>
+                    <tr>
+                        <td class="tdMedium">Ataque Especial</td>
+                        <td class="tdLight" id="ataque-e"></td>
+                    </tr>
+                    <tr>
+                        <td class="tdDark">Defensa Especial</td>
+                        <td class="tdMedium" id="defensa-e"></td>
+                    </tr>
+                    <tr>
+                        <td class="tdMedium">Velocidad</td>
+                        <td class="tdLight" id="velocidad"></td>
+                    </tr>
+                </table>
+            </section>
+            <hr>
+            <section id="descripcion">
+                <h2>Descripcion</h2>
+    
+                <div id="descripcion-info">
+                    <p>Este Pokemon de tipo <span id="info-tipo"></span> tiene una altura de <span id="info-altura"></span> y pesa <span id="info-peso"></span>.</p>
+                    <p>Tiene una experiencia base de <span id="info-exp"></span>.</p>
+                    <p>Alguno de sus movimientos principales son: <span id="info-moves"></span></p>
+                    <p>Habilidades: <span id="info-habilidades"></span>.</p>
+                </div>
+    
+            </section>
+        </div>
+        
+
+        <hr>
+
+        <section id="preguntas">
+            <h2>Preguntale al vendedor</h2>
+            <textarea name="" id="" placeholder="Escribi tu pregunta..."></textarea>
+            <button>Preguntar</button>
+        </section>
+
+        <hr>
+
+        <!--
+        <h1 id="nombre"></h1>
+        <img id="imagen" alt="Imagen del Pokemon">
+        <div id="precio">
+            <h2>$ 5</h2>
+            <h2 id="oferta"> - 20% OFF</h2>
+        </div>
+
+        <article>
+            <h2>Descripcion </h2>
+            <div id="info">
+                <h3 id="tipo">Tipo: </h3>
+                <h3 id="peso">Peso: </h3>
+                <h3 id="altura">Altura: </h3>
+                <h3 id="exp">Exp Base: </h3>
+                <h3 id="habilidades">Hablilidades: </h3>
+            </div>
+        </article>
+        <article>
+            <h2>Estadisticas </h2>
+            <div id="info-estadistica">
+                <h3 id="hp">HP: </h3>
+                <h3 id="ataque">Ataque: </h3>
+                <h3 id="defensa">Defensa: </h3>
+                <h3 id="ataque-e">Ataque-Especial: </h3>
+                <h3 id="defensa-e">Defensa-Especial: </h3>
+                <h3 id="velocidad">Velocidada: </h3>
+            </div>
+        </article>
+        <div id="agregar-compartir">
+            <div>
+                <img id="corazon" src="../Images/corazon-1.png" alt="corazon">
+                <a id="favorito" rel="noopener noreferrer">Agregar a Favoritos</a>
+            </div>
+            <div>
+                <img src="../Images/compartir.png" alt="compartir">
+                <a rel="noopener noreferrer">Compartir</a>
+            </div>
+        </div>
+    </main>
+    -->
+    <footer id="footer">
+        
+    </footer>
+    
+</body>
+
+</html>

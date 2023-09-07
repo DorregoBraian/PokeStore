@@ -1,0 +1,108 @@
+
+:root{
+    --MainColorOrange: rgb(238, 131, 41) ;
+    --SecundaryColorRed: rgb(230, 65, 16);
+    --SecundaryColorDarkRed:  rgb(205, 82, 65);
+    --SecundaryColorBlue: rgb(8, 65, 82);
+    --SecundaryColorYellow: rgb(238, 222, 123);
+    --SecundaryColorLightBlue: rgb(32, 115, 148);
+
+    --backgroundMain: rgb(235,235,235);
+    --backgroundCards: rgb(255,255,255);
+}
+
+body{
+    background-color: var(--backgroundMain);
+}
+
+.card-containers{
+    border-radius: 7px;
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-container-header{
+    background-color: var(--backgroundCards);
+    min-height: 10%;
+    padding: 15px 3% 15px 3%;
+    border-radius: 7px 7px 0px 0px;
+}
+
+#cardF-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.cardF{
+    padding: 1%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 100%;
+    background-color: var(--backgroundCards);
+}
+
+.cardF-img{
+    max-width: 33%;
+    max-width: 120px;
+    border-radius: 7px;
+}
+
+.cardF-info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cardF-img img{
+    max-width: 100%;
+    border-radius: 7px;
+}
+
+.cardF h2{
+    font-size: 100%;
+    text-transform: capitalize;
+}
+
+.cardF h4{
+    color: rgb(96, 155, 9);
+}
+
+.cardF h5{
+    color: var(--SecundaryColorLightBlue);
+    text-decoration: underline;
+}
+
+.card-container-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--backgroundCards);
+    padding: 15px 3% 15px 3%;
+    font-size: 0.8rem;
+    border-radius: 0px 0px 7px 7px;
+    color: var(--SecundaryColorLightBlue);
+}
+
+
+/* ------------------- empty ------------------------*/
+
+#notFound{
+    margin: 18vh 5% 40vh 5%;
+    text-align: center;
+}
+
+#notFound h2{
+    font-size: 1.5rem;
+    color: rgb(49, 49, 49);
+    margin: 18px 0% 18px 0%;
+}
+
+#notFound p{
+    font-size: 1rem;
+    color: rgb(94, 94, 94);
+}

@@ -1,0 +1,453 @@
+
+:root{
+    --MainColorOrange: rgb(238, 131, 41) ;
+    --SecundaryColorRed: rgb(230, 65, 16);
+    --SecundaryColorDarkRed:  rgb(205, 82, 65);
+    --SecundaryColorBlue: rgb(8, 65, 82);
+    --SecundaryColorYellow: rgb(238, 222, 123);
+    --SecundaryColorLightBlue: rgb(32, 115, 148);
+
+    --backgroundMain: rgb(235,235,235);
+    --backgroundCards: rgb(255,255,255);
+}
+
+body{
+    background-color: var(--backgroundMain);
+}
+
+.card-containers{
+    border-radius: 7px;
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-container-header{
+    background-color: var(--backgroundCards);
+    min-height: 10%;
+    padding: 15px 20px 15px 20px;
+    border-radius: 7px 7px 0px 0px;
+}
+
+#card1-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.card1{
+    padding: 1%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 100%;
+    background-color: var(--backgroundCards);
+}
+
+.card1-img{
+    max-width: 33%;
+    max-width: 120px;
+    border-radius: 7px;
+}
+
+.card1-info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card1-img img{
+    max-width: 100%;
+    border-radius: 7px;
+}
+
+.card1 h2{
+    font-size: 100%;
+    text-transform: capitalize;
+}
+
+.card1 h4{
+    color: rgb(96, 155, 9);
+}
+
+.card-container-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--backgroundCards);
+    padding: 15px 3% 15px 3%;
+    font-size: 0.8rem;
+    border-radius: 0px 0px 7px 7px;
+    color: var(--SecundaryColorLightBlue);
+}
+
+/* ------------------- card 2 ----------------------------*/
+
+
+#card2-container{
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-row: auto auto;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    background-color: var(--backgroundMain);
+}
+
+.card2{
+    background-color: var(--backgroundCards);
+    /*background-color: rgba(172, 255, 47, 0.432);
+    border: 2px red solid;*/
+    padding: 2%;
+}
+
+.card2-img{
+    max-width: 150px;
+    border-radius: 7px;
+    /*border: solid 2px purple;
+    background-color: rgba(224, 255, 47, 0.432);*/
+    margin: 0% auto 10px auto;
+}
+
+.card2 img{
+    max-width: 100%;
+}
+
+.card2-info{
+    padding: 0% 3% 0% 3%;
+    /*background-color: rgba(47, 213, 255, 0.432);
+    border: 2px orange solid;*/
+}
+
+.card2-info h2{
+    font-size: 0.9rem;
+    color: rgb(48, 48, 48);
+    text-transform: capitalize;
+}
+
+.card2-info h3{
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    color: rgb(48, 48, 48);
+}
+
+.card2-info h4{
+    font-size: 0.95rem;
+    color: rgb(96, 155, 9);
+}
+
+/* ------------------------- card 3 -------------------------------*/
+
+#card3-container{
+    background-color: var(--backgroundMain);
+}
+
+.card3{
+    background-color: var(--backgroundCards);
+    /*background-color: rgba(172, 255, 47, 0.432);
+    border: 2px red solid;*/
+    padding: 2%;
+}
+
+.card3-img{
+    max-width: 200px;
+    border-radius: 7px;
+    margin: 0% auto 10px auto;
+}
+
+.card3 img{
+    max-width: 100%;
+}
+
+.card3-info{
+    padding: 0% 13px 0% 13px;
+}
+
+.card3-info h2{
+    font-size: 1.1rem;
+    color: rgb(48, 48, 48);
+    text-transform: capitalize;
+}
+
+.card3-info h3{
+    font-size: 1.3rem;
+    color: rgb(48, 48, 48);
+}
+
+.card3-info h4{
+    font-size: 0.95rem;
+    color: rgb(96, 155, 9);
+}
+
+#ultimoVisto2{
+    display: none;
+}
+
+/* ------------------------- desktop ----------------------- */
+
+@media all and (min-width:1023px){
+
+    .card-containers{
+        border-radius: 7px;
+        margin: 3%;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .card-container-header{
+        background-color: var(--backgroundCards);
+        min-height: 10%;
+        padding: 15px 20px 15px 20px;
+        border-radius: 7px 7px 0px 0px;
+    }
+    
+    #card1-container{
+        display: flex;
+        flex-direction: row;
+        gap: 2px;
+    }
+    
+    .card1{
+        width: 25%;
+        gap: 3%;
+    }
+    
+    .card1-img{
+        min-width: 30%;
+    }
+    
+    .card1-info{
+        min-width: 50%;
+    }
+    
+    .card-container-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--backgroundCards);
+        padding: 15px 3% 15px 3%;
+        font-size: 0.8rem;
+        border-radius: 0px 0px 7px 7px;
+        color: var(--SecundaryColorLightBlue);
+    }
+
+
+    #card2-container{
+        display: flex;
+        flex-direction: row;
+        gap: 2px;
+    }
+    
+    .card2{
+        padding: 1%;
+        display: flex;
+        align-items: center;
+        font-size: 100%;
+        background-color: var(--backgroundCards);
+        width: 25%;
+        gap: 3%;
+    }
+    
+    .card2-img{
+        max-width: 33%;
+        max-width: 120px;
+        border-radius: 7px;
+        min-width: 30%;
+    }
+    
+    .card2-info{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        min-width: 50%;
+    }
+    
+    .card2-img img{
+        max-width: 100%;
+        border-radius: 7px;
+    }
+    
+    .card2 h2{
+        font-size: 100%;
+        text-transform: capitalize;
+    }
+    
+    .card2 h4{
+        color: rgb(96, 155, 9);
+    }
+
+
+    #card3-container2{
+        display: flex;
+        flex-direction: row;
+        gap: 2px;
+    }
+    
+    .card3{
+        padding: 1%;
+        display: flex;
+        align-items: center;
+        font-size: 100%;
+        background-color: var(--backgroundCards);
+        width: 25%;
+        gap: 3%;
+    }
+    
+    .card3-img{
+        max-width: 33%;
+        max-width: 120px;
+        border-radius: 7px;
+        min-width: 30%;
+    }
+    
+    .card3-info{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        min-width: 50%;
+    }
+    
+    .card3-img img{
+        max-width: 100%;
+        border-radius: 7px;
+    }
+    
+    .card3 h2{
+        font-size: 100%;
+        text-transform: capitalize;
+    }
+    
+    .card3 h4{
+        color: rgb(96, 155, 9);
+    }
+
+    #ultimoVisto{
+        display: none;
+    }
+
+    #ultimoVisto2{
+        display:flex;
+    }
+
+
+}
+
+/* ------------------------- desktop ----------------------- */
+
+@media all and (min-width:600px) and (max-width:1022px){
+    
+    #card1-container{
+        display: flex;
+        flex-direction: row;
+        gap: 2px;
+    }
+    
+    .card1{
+        flex-direction: column;
+        width: 25%;
+        gap: 3%;
+    }
+
+    #card2-container{
+        display: flex;
+        flex-direction: row;
+        gap: 2px;
+    }
+    
+    .card2{
+        padding: 1%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 100%;
+        background-color: var(--backgroundCards);
+        width: 25%;
+        gap: 3%;
+    }
+    
+    .card2-img{
+        max-width: 33%;
+        max-width: 120px;
+        border-radius: 7px;
+        min-width: 30%;
+    }
+    
+    .card2-info{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        min-width: 50%;
+    }
+    
+    .card2-img img{
+        max-width: 100%;
+        border-radius: 7px;
+    }
+    
+    .card2 h2{
+        font-size: 100%;
+        text-transform: capitalize;
+    }
+    
+    .card2 h4{
+        color: rgb(96, 155, 9);
+    }
+
+
+    #card3-container2{
+        display: flex;
+        flex-direction: row;
+        gap: 2px;
+    }
+    
+    .card3{
+        padding: 1%;
+        display: flex;
+        align-items: center;
+        font-size: 100%;
+        background-color: var(--backgroundCards);
+        width: 25%;
+        gap: 3%;
+    }
+    
+    .card3-img{
+        max-width: 33%;
+        max-width: 120px;
+        border-radius: 7px;
+        min-width: 30%;
+    }
+    
+    .card3-info{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        min-width: 50%;
+    }
+    
+    .card3-img img{
+        max-width: 100%;
+        border-radius: 7px;
+    }
+    
+    .card3 h2{
+        font-size: 100%;
+        text-transform: capitalize;
+    }
+    
+    .card3 h4{
+        color: rgb(96, 155, 9);
+    }
+
+    #ultimoVisto{
+        display: none;
+    }
+
+    #ultimoVisto2{
+        display:flex;
+    }
+
+
+}

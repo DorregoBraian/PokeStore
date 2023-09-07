@@ -1,0 +1,57 @@
+:root{
+    --MainColorOrange: rgb(238, 131, 41) ;
+    --SecundaryColorRed: rgb(230, 65, 16);
+    --SecundaryColorDarkRed:  rgb(205, 82, 65);
+    --SecundaryColorBlue: rgb(8, 65, 82);
+    --SecundaryColorYellow: rgb(238, 222, 123);
+    --SecundaryColorLightBlue: rgb(32, 115, 148);
+
+    --backgroundMain: rgb(235,235,235);
+    --backgroundCards: rgb(255,255,255);
+}
+
+body{
+    background-color: var(--backgroundMain);
+}
+
+#cont-form{
+    border: solid rgb(32, 115, 148);
+    background-color:rgb(238, 131, 41);
+    border-radius: 5%;
+    padding: 1%;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+
+}
+#form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 200%;
+    color: black;
+    margin-top: 5%;
+}
+
+#tituloForm{
+    font-size: 250%;
+    color: black;
+}
+
+button{
+    padding: 2%;
+    
+}
+input{
+    padding: 2%;
+    margin-top: 2%;
+}
+
+
+
+
+
